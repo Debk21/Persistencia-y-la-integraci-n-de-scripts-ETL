@@ -59,3 +59,9 @@ Durante la carga, el script utiliza `ON CONFLICT` para actualizar una venta exis
 * SQLite
 * SQL
 * Git y GitHub
+
+## Pruebas realizadas
+
+Se ejecutó el script ETL para comprobar la extracción, transformación y carga de los datos en SQLite.
+
+La carga se ejecutó nuevamente para verificar que los identificadores existentes no generaran registros duplicados. También utilicé `verificar.py` para consultar la cantidad de ventas guardadas y detectar posibles duplicados.
