@@ -1,0 +1,14 @@
+# Base de datos generada localmente
+ventas.db
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Configuración local de VS Code
+.vscode/
+

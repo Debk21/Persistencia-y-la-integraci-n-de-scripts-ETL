@@ -1,0 +1,11 @@
+id_venta,producto,cantidad,precio_unitario,fecha
+1,Teclado,2,850,2026-10-01
+2,Mouse,3,450,2026-10-02
+3,Monitor,1,12500,2026-10-03
+4,Auriculares,2,1800,2026-10-04
+5,Webcam,1,2300,2026-10-05
+6,Mouse,2,450,2026-10-06
+7,Teclado,1,850,2026-10-07
+8,Monitor,2,12500,2026-10-08
+9,Parlante,1,3200,2026-10-09
+10,Auriculares,3,1800,2026-10-10
