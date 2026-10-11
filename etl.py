@@ -3,12 +3,13 @@ from pathlib import Path
 
 import pandas as pd
 
-#Rutas del proyecto
+#Configuracion de rutas
 BASE_DIR = Path(__file__).resolve().parent
 ARCHIVO_CSV = BASE_DIR / "datos" / "ventas.csv"
 ARCHIVO_SQL = BASE_DIR / "esquema.sql"
 BASE_DATOS = BASE_DIR / "ventas.db"
 
+#Extraccion de datos
 def extraer_datos():
     """Lee los datos desde el archivo CSV."""
     print("Extrayendo datos...")
@@ -19,6 +20,7 @@ def extraer_datos():
         )
     return pd.read_csv(ARCHIVO_CSV)
 
+#Limpieza y transformacion de datos
 def transformar_datos(df):
     """Limpia los datos y calcula el importe total"""
     print("Transformando datos...")
@@ -75,6 +77,7 @@ def transformar_datos(df):
         ]
     ]
 
+#Carga y persistencia en SQLite
 def cargar_datos(df):
     """Carga los datos en SQLite sin duplicar identificadores."""
     print("Cargando datos en SQLite...")
@@ -111,6 +114,7 @@ def cargar_datos(df):
     finally:
         conexion.close()
 
+#Ejecucion del proceso ETL
 def main ():
     """Ejectura el flujo ETL completo"""
     try:
@@ -125,5 +129,8 @@ def main ():
     except Exception as error:
         print (f"Error inesperado: {error}")
 
+
 if __name__ == "__main__":
     main()
+
+    
